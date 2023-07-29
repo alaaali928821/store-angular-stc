@@ -1,0 +1,15 @@
+<div class="contanier">
+<div *ngFor="let product of allProducts" class="card">
+    <mat-card class="product-card">
+        <mat-card-header>
+            <mat-card-title>{{ product.title| slice:0: 7 }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{product.image}}" alt="Photo" class="img">
+        <mat-card-content>
+            <p>
+                {{ product.description| slice:0: 75 }}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
+</div>

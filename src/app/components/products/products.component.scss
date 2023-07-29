@@ -1,0 +1,21 @@
+.product-card {
+    max-width: 400px;
+  }
+  
+  .contanier{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 10%;
+  }
+
+.img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+  .card {
+    display: inline-block;
+    margin: 20px;
+  }
+  
