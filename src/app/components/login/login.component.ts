@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit  {
+export class LoginComponent {
   loginForm: FormGroup = this.formBuilder.group({
     username: ['', Validators.required],
     password: ['', Validators.required]
@@ -15,8 +15,6 @@ export class LoginComponent implements OnInit  {
 
   constructor(private formBuilder: FormBuilder, public authService: AuthService) { }
 
-  ngOnInit() {
-  }
   onSubmit() {
     if (this.loginForm.invalid) {
       alert("Please Add Valid Data");
